@@ -24,7 +24,7 @@ function App() {
           <Route exact path='/portfolio' render={props =>
             <PortfolioPage {...props}/>
           } />
-        </Switch>
+        </Switch> 
       </main>
       <Footer />
     </div>
