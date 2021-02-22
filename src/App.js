@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
 
 import HomePage from './pages/Home';

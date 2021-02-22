@@ -1,0 +1,35 @@
+.FooterContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Divider {
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 1.5px;
+    margin: 40px;
+}
+
+.ContactContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* padding-left: 40px; */
+}
+
+.ImgLinkContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: stretch;
+    padding: 15px 0 0 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

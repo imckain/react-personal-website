@@ -1,0 +1,12 @@
+.HomePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.HomeSplashScreen {
+    width:  100vw;
+    height: 40vh;
+    background-color: rgba(121, 120, 120, 0.493);
+}
