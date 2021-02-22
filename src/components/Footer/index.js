@@ -34,8 +34,8 @@ function Footer(props) {
                             <span><a href="tel:+1(614) 931-0467">(614) 931-0467</a></span>
                         </div>
                         <div className={styles.ImgLinkContainer}>
-                            <span><a href="https://github.com/imckain"><i class="fab fa-github-square"></i></a></span>
-                            <span><a href="https://www.linkedin.com/in/ianmckain"><i class="fab fa-linkedin"></i></a></span>
+                            <span><a href="https://github.com/imckain"><i class="fab fa-github-square fa-2x"></i></a></span>
+                            <span><a href="https://www.linkedin.com/in/ianmckain"><i class="fab fa-linkedin fa-2x"></i></a></span>
                         </div>
                     </div>
                 </div>
