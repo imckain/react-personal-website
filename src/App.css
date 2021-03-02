@@ -15,8 +15,7 @@
   }
 }
 
-
-
 main {
   flex-grow: 1;
+  padding-bottom: 250px;
 }
