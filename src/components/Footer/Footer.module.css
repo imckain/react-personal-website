@@ -7,7 +7,7 @@
 
 .Divider {
     background-color: rgb(255, 255, 255);
-    height: 100px;
+    height: 200px;
     width: 1.5px;
     margin: 40px;
 }
@@ -26,7 +26,7 @@
     align-items: center;
     justify-content: space-evenly;
     width: stretch;
-    padding: 15px 0 0 0px;
+    padding: 35px 0 0 0px;
 }
 
 a {
