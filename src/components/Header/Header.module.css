@@ -1,0 +1,56 @@
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.NavBar > ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.LogoLink {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.LogoLink:hover {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.LogoLink:active {
+    text-decoration: none;
+    color: white;
+}
+.LogoLink:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.NavLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.NavLink:hover {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.NavLink:active {
+    text-decoration: none;
+    color: white;
+}
+.NavLink:visited {
+    text-decoration: none;
+    color: white;
+}
