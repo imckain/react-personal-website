@@ -26,8 +26,8 @@ function App() {
             <PortfolioPage {...props}/>
           } />
         </Switch> 
+        <Footer className="Footer"/>
       </main>
-      <Footer />
     </div>
   );
 }
