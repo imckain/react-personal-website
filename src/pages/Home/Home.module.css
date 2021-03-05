@@ -1,13 +1,124 @@
+.SplashScreenContainer {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    background-color: rgba(121, 120, 120, 0.493);
+}
+
 .HomePage {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     height: 100vh;
 }
 
 .HomeSplashScreen {
-    width:  100vw;
-    height: 40vh;
-    background-color: rgba(121, 120, 120, 0.493);
+    width:  100%;
+    height: 70vh;
 }
+
+.HomeSplashScreen > h1 {
+    margin: 0;
+}
+
+.ImageContainer {
+    width: 100%;
+}
+.ImageContainer > img {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    z-index: 1;
+    border-radius: 50%;
+    height: 250px;
+}
+
+@keyframes changeContent {
+    0% {
+        opacity: 0;
+        content: "React.JS";
+    }
+    3% {
+        opacity: 1;
+    }
+    14% {
+        opacity: 1;
+    }
+    /* 18%{
+        opacity: 0;
+    } */
+    19% {
+        opacity: 0;
+        content: "JavaScript";
+    }
+    20% {
+        opacity: 0;
+    }
+    23% {
+        opacity: 1;
+    }
+    34% {
+        opacity: 1;
+    }
+    /* 38%{
+        opacity: 0;
+    } */
+    39% {
+        opacity: 0;
+        content: "Python";
+    }
+    40% {
+        opacity: 0;
+    }
+    43% {
+        opacity: 1;
+    }
+    54% {
+        opacity: 1;
+    }
+    /* 58% {
+        opacity: 0;
+    } */
+    59% {
+        opacity: 0;
+        content: "Django";
+    }
+    60% {
+        opacity: 0;
+    }
+    61% {
+        opacity: 1;
+    }
+    74% {
+        opacity: 1;
+    }
+    /* 78% {
+        opacity: 0;
+    } */
+    79% {
+        opacity: 0;
+        content: "MERN";
+    }
+    80% {
+        opacity: 0;
+    }
+    81% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    94% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+}
+
+/* .Message > p > span::after {
+    animation: changeContent 40s linear infinite;
+    content: "React.JS";
+    font-weight: 600;
+} */
