@@ -1,10 +1,5 @@
 .App {
   text-align: center;
-<<<<<<< HEAD
-  display: flex;
-  flex-direction: column;
-=======
->>>>>>> master
 }
 
 .App-logo {
@@ -18,12 +13,6 @@
   }
 }
 
-<<<<<<< HEAD
-main {
-  flex-grow: 1;
-  padding-bottom: 250px;
-}
-=======
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -47,4 +36,3 @@ main {
     transform: rotate(360deg);
   }
 }
->>>>>>> master
