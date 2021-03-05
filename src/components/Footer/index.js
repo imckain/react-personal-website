@@ -3,10 +3,7 @@ import styles from './Footer.module.css';
 
 function Footer(props) {
     const Footer = styled.footer`
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100vw;
+        width: 100%;
         height: 250px;
         background-color: #282c34;
         display: flex;

@@ -7,9 +7,9 @@
 
 .Divider {
     background-color: rgb(255, 255, 255);
-    height: 200px;
+    height: 170px;
     width: 1.5px;
-    margin: 40px;
+    margin: 0 40px 0 40px;
 }
 
 .ContactContent {
