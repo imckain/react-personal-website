@@ -20,8 +20,10 @@ function Header(props) {
     function scrollFunction() {
     if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
         document.getElementById("header").style.height = "60px";
+        document.getElementById("header").style.backgroundColor = "rgba(51, 51, 51, 0.904)";
     } else {
         document.getElementById("header").style.height = "130px";
+        document.getElementById("header").style.backgroundColor = "rgb(51, 51, 51)";
     }
     }
 
