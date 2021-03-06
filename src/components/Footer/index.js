@@ -5,13 +5,14 @@ function Footer(props) {
     const Footer = styled.footer`
         width: 100%;
         height: 250px;
-        background-color: #282c34;
+        background-color: var(--grey-background-color);
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         font-size: calc(7px + 2vmin);
         color: white;
+        box-shadow: var(--main-top-shadow);
     `;
     
     return(
