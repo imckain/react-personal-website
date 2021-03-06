@@ -132,7 +132,6 @@ class HomePage extends Component {
                       </div>
                       <div className={styles.SkillsListWrapper}>
                         <ul>
-                          {/* FULL LIST */}
                           <li><img src={reactImg} alt="" className={styles.SkillImg}/> React.JS</li>
                           <li><img src={jsImg} alt="" className={styles.SkillImg}/> JavaScript</li> 
                           <li><img src={nodeImg} alt="" className={styles.SkillImg}/> Node.JS</li>
@@ -144,13 +143,6 @@ class HomePage extends Component {
                           <li><img src={mvcImg} alt="" className={styles.SkillImg}/> MVC</li>
                           <li><img src={postgresqlImg} alt="" className={styles.SkillImg}/> PostgreSQL</li>
                           <li><img src={mongoImg} alt="" className={styles.SkillImg}/> MongoDB</li>
-                          {/* BROKEN LIST */}
-                          {/* <li><img src={reactImg} alt="" className={styles.SkillImg}/> React.JS</li>
-                          <li><img src={jsImg} alt="" className={styles.SkillImg}/> JavaScript &nbsp;•&nbsp; <img src={nodeImg} alt="" className={styles.SkillImg}/> Node.JS</li> 
-                          <li><img src={htmlImg} alt="" className={styles.SkillImg}/> HTML &nbsp;•&nbsp; <img src={cssImg} alt="" className={styles.SkillImg}/> CSS</li>
-                          <li><img src={pythonImg} alt="" className={styles.SkillImg}/> Python &nbsp;•&nbsp; <img src={djangoImg} alt="" className={styles.SkillImg}/> Django</li>
-                          <li><img src={restImg} alt="" className={styles.SkillImg}/> REST &nbsp;•&nbsp; <img src={mvcImg} alt="" className={styles.SkillImg}/> MVC</li>
-                          <li><img src={postgresqlImg} alt="" className={styles.SkillImg}/> PostgreSQL &nbsp;•&nbsp; <img src={mongoImg} alt="" className={styles.SkillImg}/> MongoDB</li> */}
                         </ul>
                       </div>
                     </div>

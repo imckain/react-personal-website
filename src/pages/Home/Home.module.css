@@ -29,13 +29,11 @@
     margin-top: 130px;
     display: inline-block;
     align-items: center;
-    /* justify-content: center; */
     height: 100vh;
     font-size: 2vw;
 }
 
 .HomeSplashScreen {
-    /* transform: skewY(11deg); */
     color: rgb(121, 120, 120);
     padding-top: 50px;
     width:  100%;
@@ -57,7 +55,6 @@
     position: absolute;
     right: 65px;
     bottom: 15px;
-    /* z-index: 1; */
     border-radius: 50%;
     height: 220px;
     border: 5px solid white;
@@ -67,12 +64,6 @@
 .HomeContent {
     display: flex;
     flex-direction: column;
-    /* display: inline-block;
-    position: relative;
-    height: 0;
-    width: 100%;
-    padding: 0;
-    padding-bottom: 100%; */
 }
 
 .BannerBackground {
@@ -90,15 +81,6 @@
     box-shadow: var(--main-top-shadow);
     box-shadow: var(--main-shadow);
 }
-
-/* .BlackBanner {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    top: 0;
-    left: 0;
-} */
 
 .IntroContent::before {
     position: absolute;
@@ -140,7 +122,6 @@
     color: var(--accent-color);
     overflow-wrap: break-word;
     text-align: left;
-    /* font-size: 23px; */
 }
 
 .SkillsListWrapper {
