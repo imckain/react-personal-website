@@ -2,20 +2,44 @@
     width: 100%;
     display: inline-block;
     position: relative;
-    background-color: rgba(121, 120, 120, 0.493);
+    background-color: rgb(121, 120, 120);
+    z-index: 1;
+}
+
+.SplashBackgroundContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: skewY(-11deg);
+}
+
+.SplashBackground::before {
+    position: absolute;
+}
+
+.SplashBackground {
+    width: 100%;
+    background-image: url('../../assets/homebg2.jpg');
+    background-size: cover;
+    transform: skewY(11deg);
 }
 
 .HomePage {
-    display: flex;
-    flex-direction: column;
+    margin-top: 130px;
+    display: inline-block;
     align-items: center;
     /* justify-content: center; */
     height: 100vh;
+    font-size: 2vw;
 }
 
 .HomeSplashScreen {
+    /* transform: skewY(11deg); */
+    color: rgb(121, 120, 120);
+    padding-top: 50px;
     width:  100%;
     height: 70vh;
+    z-index: 1;
 }
 
 .HomeSplashScreen > h1 {
@@ -24,101 +48,68 @@
 
 .ImageContainer {
     width: 100%;
+    transform: skewY(11deg);
+    z-index: 2;
 }
+
 .ImageContainer > img {
     position: absolute;
     right: 15px;
     bottom: 15px;
-    z-index: 1;
+    /* z-index: 1; */
     border-radius: 50%;
-    height: 250px;
+    height: 220px;
+    border: 5px solid white;
+    box-shadow: 0 -2px 6px 2px rgba(46, 46, 46, 0.5);
 }
 
-@keyframes changeContent {
-    0% {
-        opacity: 0;
-        content: "React.JS";
-    }
-    3% {
-        opacity: 1;
-    }
-    14% {
-        opacity: 1;
-    }
-    /* 18%{
-        opacity: 0;
-    } */
-    19% {
-        opacity: 0;
-        content: "JavaScript";
-    }
-    20% {
-        opacity: 0;
-    }
-    23% {
-        opacity: 1;
-    }
-    34% {
-        opacity: 1;
-    }
-    /* 38%{
-        opacity: 0;
-    } */
-    39% {
-        opacity: 0;
-        content: "Python";
-    }
-    40% {
-        opacity: 0;
-    }
-    43% {
-        opacity: 1;
-    }
-    54% {
-        opacity: 1;
-    }
-    /* 58% {
-        opacity: 0;
-    } */
-    59% {
-        opacity: 0;
-        content: "Django";
-    }
-    60% {
-        opacity: 0;
-    }
-    61% {
-        opacity: 1;
-    }
-    74% {
-        opacity: 1;
-    }
-    /* 78% {
-        opacity: 0;
-    } */
-    79% {
-        opacity: 0;
-        content: "MERN";
-    }
-    80% {
-        opacity: 0;
-    }
-    81% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-    }
-    94% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 0;
-    }
+.HomeContent {
+    display: flex;
+    flex-direction: column;
+    /* display: inline-block;
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 100%; */
 }
 
-/* .Message > p > span::after {
-    animation: changeContent 40s linear infinite;
-    content: "React.JS";
-    font-weight: 600;
+.BannerBackground {
+    display: inline-block;
+    position: relative;
+    background-color: black;
+    width: 100%;
+    transform: skewY(-11deg);
+    top: -130px;
+    z-index: 2;
+    height: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0 -4px 6px 4px rgba(46, 46, 46, 0.5);
+}
+
+/* .BlackBanner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
 } */
+
+.IntroContent::before {
+    position: absolute;
+}
+
+.IntroContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transform: skewY(11deg);
+    background: none;
+    height: 100%;
+    padding-top: 200px;
+    color: rgba(175, 175, 175, 0.719);
+}
+

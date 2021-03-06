@@ -1,10 +1,10 @@
-import { Component, useState } from 'react'
+import { Component } from 'react'
 
 import styles from './Home.module.css';
-import photo from '../../assets/me.JPG'
-import App from '../../App';
+import photo from '../../assets/me-square.jpeg'
+// import blackBanner from '../../assets/RectANGLE-black.svg'
 
-let dataWords = ['React.JS, JavaScript/Node.JS, Python/Django']
+let dataWords = '["React.JS", "JavaScript/Node.JS", "Python/Django"]'
 
 class TypeWriter {
     constructor(txtElement, words, wait = 3000) {
@@ -16,13 +16,13 @@ class TypeWriter {
       this.type();
       this.isDeleting = false;
     }
-  
+
     type() {
       // Current index of word
       const current = this.wordIndex % this.words.length;
       // Get full text of current word
       const fullTxt = this.words[current];
-  
+
       // Check if deleting
       if (this.isDeleting) {
         // Remove char
@@ -31,17 +31,17 @@ class TypeWriter {
         // Add char
         this.txt = fullTxt.substring(0, this.txt.length + 1);
       }
-  
+
       // Insert txt into element
       this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-  
+
       // Initial Type Speed
       let typeSpeed = 300;
-  
+
       if (this.isDeleting) {
         typeSpeed /= 2;
       }
-  
+
       // If word is complete
       if (!this.isDeleting && this.txt === fullTxt) {
         // Make pause at end
@@ -55,22 +55,22 @@ class TypeWriter {
         // Pause before start typing
         typeSpeed = 500;
       }
-  
+
       setTimeout(() => this.type(), typeSpeed);
     }
   }
-  
+
   // Init On DOM Load
   document.addEventListener('DOMContentLoaded', init);
-  
+
   // Init App
   function init() {
     const txtElement = document.querySelector('.txt-type');
-    const words = dataWords;
+    const words = JSON.parse(dataWords);
     const wait = 3000;
     // Init TypeWriter
     new TypeWriter(txtElement, words, wait);
-}
+  }
 
 class HomePage extends Component {
     constructor(props) {
@@ -82,31 +82,40 @@ class HomePage extends Component {
         return(
             <div className={styles.HomePage}>
                 <div className={styles.SplashScreenContainer}>
-                    <div className={styles.HomeSplashScreen}>
-                        <h1>I'm Ian</h1>
-                        <div className={styles.Message}>
-                            <p>I'm a <span className='txt-type'></span> Developer</p>
-                            <p>Checkout my work and drop me a line</p>
+                    <div className={styles.SplashBackgroundContainer}>
+                      <div className={styles.SplashBackground}>
+                        <div className={styles.HomeSplashScreen}>
+                            <p>Hello! Welcome to the personal website of</p>
+                            <h2>Ian McKain</h2>
+                            <div className={styles.Message}>
+                              <p><span className='txt-type' ></span>&nbsp;Developer based out of Columbus, OH</p>
+                              <p>specializing in responsive, modern websites & effecient data managment</p> 
+                              <p>Checkout my work and drop me a line</p>
+                            </div>
                         </div>
+                      </div>
                     </div>
+                </div>
+                <div className={styles.HomeContent}>
+                  {/* <img className={styles.BlackBanner} src={blackBanner} alt=""/> */}
+                  <div className={styles.BannerBackground}>
                     <div className={styles.ImageContainer}>
                         <img src={photo} alt=""/>
                     </div>
-                </div>
-                <div className="HomeContent">
-                    <div className="IntroContent">
+                    <div className={styles.IntroContent}>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero animi, deserunt voluptate minus consequuntur sit repudiandae ducimus amet sint ipsa quis dolorum necessitatibus sapiente est a quia! Ratione, aspernatur repudiandae.</p>
                     </div>
-                    <div className="ContactForm">
-                        <form action="">
-                            <input type="text" value="" className="FormInput"/>
-                            <input type="text" value="" className="FormInput"/>
-                            <input type="text" value="" className="FormInput"/>
-                            <input type="text" value="" className="FormInput"/>
-                            <input type="text" value="" className="FormInput"/>
-                            <input type="submit" value="" className="FormInput"/>
-                        </form>
-                    </div>
+                  </div>
+                </div>
+                <div className="ContactForm">
+                    <form action="">
+                        <input type="text" value="" className="FormInput"/>
+                        <input type="text" value="" className="FormInput"/>
+                        <input type="text" value="" className="FormInput"/>
+                        <input type="text" value="" className="FormInput"/>
+                        <input type="text" value="" className="FormInput"/>
+                        <input type="submit" value="" className="FormInput"/>
+                    </form>
                 </div>
             </div>
         )
