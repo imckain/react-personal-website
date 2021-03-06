@@ -43,7 +43,7 @@ class TypeWriter {
       }
 
       // Insert txt into element
-      this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+      this.txtElement.innerHTML = `<span class="txt" style="font-weight: 700"> ${this.txt} </span>`;
 
       // Initial Type Speed
       let typeSpeed = 300;
@@ -98,7 +98,7 @@ class HomePage extends Component {
                             <p>Hello! Welcome to the personal website of</p>
                             <h2>Ian McKain</h2>
                             <div className={styles.Message}>
-                              <p><span className='txt-type' ></span>&nbsp;Developer based out of Columbus, OH</p>
+                              <p>A<span className='txt-type' ></span>Developer based out of Columbus, OH</p>
                               <p>specializing in responsive, modern websites & effecient data managment</p> 
                               <p>Checkout my work and drop me a line</p>
                             </div>
@@ -107,7 +107,6 @@ class HomePage extends Component {
                     </div>
                 </div>
                 <div className={styles.HomeContent}>
-                  {/* <img className={styles.BlackBanner} src={blackBanner} alt=""/> */}
                   <div className={styles.BannerBackground}>
                     <div className={styles.ImageContainer}>
                         <img src={photo} alt=""/>
