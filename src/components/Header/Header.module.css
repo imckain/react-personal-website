@@ -1,34 +1,35 @@
+.ImgLinkContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+    margin-left: 35px;
+}
+
+.HeaderLinkContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.HeaderLinkContainer > span {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
 .NavBar {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-right: 35px;
 }
 
 .NavBar > ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
-}
-
-.LogoLink {
-    padding: 20px;
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.LogoLink:hover {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-}
-.LogoLink:active {
-    text-decoration: none;
-    color: white;
-}
-.LogoLink:visited {
-    text-decoration: none;
-    color: white;
 }
 
 .NavLink {
