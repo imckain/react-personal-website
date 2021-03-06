@@ -11,6 +11,15 @@ main {
   position: relative;
 }
 
+Header {
+  position: fixed;
+  top: 0;
+  height: 130px;
+  width: 100%;
+  z-index: 4;
+  transition: 0.2s;
+}
+
 Footer {
   /* position: fixed; */
   bottom: 0;
