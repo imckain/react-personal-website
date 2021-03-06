@@ -134,15 +134,15 @@ class HomePage extends Component {
                         <ul>
                           <li><img src={reactImg} alt="" className={styles.SkillImg}/> React.JS</li>
                           <li><img src={jsImg} alt="" className={styles.SkillImg}/> JavaScript</li> 
-                          <li><img src={nodeImg} alt="" className={styles.SkillImg}/> Node.JS</li>
                           <li><img src={htmlImg} alt="" className={styles.SkillImg}/> HTML</li>
                           <li><img src={cssImg} alt="" className={styles.SkillImg}/> CSS</li>
+                          <li><img src={nodeImg} alt="" className={styles.SkillImg}/> Node.JS</li>
+                          <li><img src={mongoImg} alt="" className={styles.SkillImg}/> MongoDB</li>
                           <li><img src={pythonImg} alt="" className={styles.SkillImg}/> Python</li>
                           <li><img src={djangoImg} alt="" className={styles.SkillImg}/> Django</li>
+                          <li><img src={postgresqlImg} alt="" className={styles.SkillImg}/> PostgreSQL</li>
                           <li><img src={restImg} alt="" className={styles.SkillImg}/> REST</li>
                           <li><img src={mvcImg} alt="" className={styles.SkillImg}/> MVC</li>
-                          <li><img src={postgresqlImg} alt="" className={styles.SkillImg}/> PostgreSQL</li>
-                          <li><img src={mongoImg} alt="" className={styles.SkillImg}/> MongoDB</li>
                         </ul>
                       </div>
                     </div>
@@ -155,7 +155,7 @@ class HomePage extends Component {
                         <input type="text" value="" className="FormInput"/>
                         <input type="text" value="" className="FormInput"/>
                         <input type="text" value="" className="FormInput"/>
-                        <input type="submit" value="" className="FormInput"/>
+                        <input type="submit" value="Submit" className="FormInput"/>
                     </form>
                 </div>
             </div>
