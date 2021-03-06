@@ -1,8 +1,18 @@
 import { Component } from 'react'
 
 import styles from './Home.module.css';
-import photo from '../../assets/me-square.jpeg'
-// import blackBanner from '../../assets/RectANGLE-black.svg'
+import photo from '../../assets/me-square.jpeg';
+import reactImg from '../../assets/techImages/react.png';
+import jsImg from '../../assets/techImages/javascript.png';
+import nodeImg from '../../assets/techImages/nodejs.png';
+import cssImg from '../../assets/techImages/css.png';
+import htmlImg from '../../assets/techImages/html5.png';
+import mongoImg from '../../assets/techImages/mongo_db.png'
+import pythonImg from '../../assets/techImages/python.png'
+import djangoImg from '../../assets/techImages/django.png'
+import restImg from '../../assets/techImages/api.png'
+import mvcImg from '../../assets/techImages/database.png'
+import postgresqlImg from '../../assets/techImages/postgresql.png'
 
 let dataWords = '["React.JS", "JavaScript/Node.JS", "Python/Django"]'
 
@@ -103,7 +113,47 @@ class HomePage extends Component {
                         <img src={photo} alt=""/>
                     </div>
                     <div className={styles.IntroContent}>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero animi, deserunt voluptate minus consequuntur sit repudiandae ducimus amet sint ipsa quis dolorum necessitatibus sapiente est a quia! Ratione, aspernatur repudiandae.</p>
+                      <div className={styles.IntroWrapper}>
+                        <p>Hi! Thank you for visiting my site.
+                          <br/>
+                          <br/>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm Ian and I'm a web developer out of Columbus, OH. 
+                          My specialities are listed to the right and I have a 
+                          selection of projects that you may be interested in below. 
+                          Feel free to checkout my GitHub and to connect with me on LinkedIn. 
+                          <br/>
+                          <br/>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you would like to learn a bit more about me, or to see my resume, 
+                          please visit the "About" page. If you would like to see my full portfolio,
+                          plese visit the "Portfolio" page or checkout my GitHub for the source code.
+                          <br/>
+                          <br/>
+                          Happy Coding!
+                        </p>
+                      </div>
+                      <div className={styles.SkillsListWrapper}>
+                        <ul>
+                          {/* FULL LIST */}
+                          <li><img src={reactImg} alt="" className={styles.SkillImg}/> React.JS</li>
+                          <li><img src={jsImg} alt="" className={styles.SkillImg}/> JavaScript</li> 
+                          <li><img src={nodeImg} alt="" className={styles.SkillImg}/> Node.JS</li>
+                          <li><img src={htmlImg} alt="" className={styles.SkillImg}/> HTML</li>
+                          <li><img src={cssImg} alt="" className={styles.SkillImg}/> CSS</li>
+                          <li><img src={pythonImg} alt="" className={styles.SkillImg}/> Python</li>
+                          <li><img src={djangoImg} alt="" className={styles.SkillImg}/> Django</li>
+                          <li><img src={restImg} alt="" className={styles.SkillImg}/> REST</li>
+                          <li><img src={mvcImg} alt="" className={styles.SkillImg}/> MVC</li>
+                          <li><img src={postgresqlImg} alt="" className={styles.SkillImg}/> PostgreSQL</li>
+                          <li><img src={mongoImg} alt="" className={styles.SkillImg}/> MongoDB</li>
+                          {/* BROKEN LIST */}
+                          {/* <li><img src={reactImg} alt="" className={styles.SkillImg}/> React.JS</li>
+                          <li><img src={jsImg} alt="" className={styles.SkillImg}/> JavaScript &nbsp;•&nbsp; <img src={nodeImg} alt="" className={styles.SkillImg}/> Node.JS</li> 
+                          <li><img src={htmlImg} alt="" className={styles.SkillImg}/> HTML &nbsp;•&nbsp; <img src={cssImg} alt="" className={styles.SkillImg}/> CSS</li>
+                          <li><img src={pythonImg} alt="" className={styles.SkillImg}/> Python &nbsp;•&nbsp; <img src={djangoImg} alt="" className={styles.SkillImg}/> Django</li>
+                          <li><img src={restImg} alt="" className={styles.SkillImg}/> REST &nbsp;•&nbsp; <img src={mvcImg} alt="" className={styles.SkillImg}/> MVC</li>
+                          <li><img src={postgresqlImg} alt="" className={styles.SkillImg}/> PostgreSQL &nbsp;•&nbsp; <img src={mongoImg} alt="" className={styles.SkillImg}/> MongoDB</li> */}
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
