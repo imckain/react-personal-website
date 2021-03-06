@@ -88,6 +88,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
     box-shadow: var(--main-top-shadow);
+    box-shadow: var(--main-shadow);
 }
 
 /* .BlackBanner {
