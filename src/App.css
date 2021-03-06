@@ -30,7 +30,7 @@ Header {
   width: 100%;
   /* max-width: 1300px; */
   z-index: 4;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
 Footer {
