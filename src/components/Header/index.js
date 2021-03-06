@@ -4,13 +4,15 @@ import styles from './Header.module.css';
 
 function Header(props) {
     const Header = styled.header`
-        background-color: #282c34;
+        background-color: var(--grey-background-color);
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         font-size: calc(7px + 2vmin);
         color: white;
+        border-bottom: 3px solid white;
+        box-shadow: var(--main-shadow);
     `;
 
     window.onscroll = function() {scrollFunction()};
