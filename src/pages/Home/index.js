@@ -14,9 +14,7 @@ import djangoImg from '../../assets/techImages/django.png'
 import restImg from '../../assets/techImages/api.png'
 import mvcImg from '../../assets/techImages/database.png'
 import postgresqlImg from '../../assets/techImages/postgresql.png'
-// Project Cards
-import realEstateImg from '../../assets/realestate.jpg'
-
+//
 
 let dataWords = '["React.JS", "JavaScript/Node.JS", "Python/Django"]'
 
@@ -152,13 +150,24 @@ class HomePage extends Component {
           </div>
         </div>
         <div className={styles.ProjectsContainer}>
-          <div className={styles.ProjectCard}>
+          <div className={styles.ProjectCard1}>
             <div className={styles.CardBackground1}>
             </div>
             <div className={styles.CardBannerBackground}>
-              <div className={styles.CardContent}>
-                <span className={styles.ProjectTitle}>React Real Estate</span>
-                <p></p>
+              <div className={styles.CardContentContainer}>
+                <div className={styles.ProjectTitle1}>
+                  <span>React Real Estate</span>
+                </div>
+                <div className={styles.CardContent}>
+                  <p>An example React App for a real estate client</p>
+                  <div className={styles.CardRule}></div>
+                  <p>Full CRUD for admin</p>
+                  <div className={styles.CardRule}></div>
+                  <p>OAuth secure login for potential buyers</p>
+                  <div className={styles.CardRule}></div>
+                  <p>Full Stack with React, Node, MongoDB</p>
+                  <div className={styles.CardRule}></div>
+                </div>
               </div>
             </div>
             <div className={styles.CardLinksContainer}>
@@ -166,22 +175,44 @@ class HomePage extends Component {
             </div>
           </div>
           <div className={styles.ProjectCard}>
-            <div className={styles.CardBackground2}>
-              <span className={styles.ProjectTitle}>Project</span>
+            <div className={styles.CardBackground1}>
             </div>
-            <div className={styles.CardContent}>
-              <p></p>
+            <div className={styles.CardBannerBackground}>
+              <div className={styles.CardContentContainer}>
+                <span className={styles.ProjectTitle}>React Real Estate</span>
+                <div className={styles.CardContent}>
+                  <p>An example React App for a real estate client</p>
+                  <div className={styles.CardRule}></div>
+                  <p>Full CRUD for admin</p>
+                  <div className={styles.CardRule}></div>
+                  <p>OAuth secure login for potential buyers</p>
+                  <div className={styles.CardRule}></div>
+                  <p>Full Stack with React, Node, MongoDB</p>
+                  <div className={styles.CardRule}></div>
+                </div>
+              </div>
             </div>
             <div className={styles.CardLinksContainer}>
 
             </div>
           </div>
           <div className={styles.ProjectCard}>
-            <div className={styles.CardBackground3}>
-              <span className={styles.ProjectTitle}>Project</span>
+            <div className={styles.CardBackground1}>
             </div>
-            <div className={styles.CardContent}>
-              <p></p>
+            <div className={styles.CardBannerBackground}>
+              <div className={styles.CardContentContainer}>
+                <span className={styles.ProjectTitle}>React Real Estate</span>
+                <div className={styles.CardContent}>
+                  <p>An example React App for a real estate client</p>
+                  <div className={styles.CardRule}></div>
+                  <p>Full CRUD for admin</p>
+                  <div className={styles.CardRule}></div>
+                  <p>OAuth secure login for potential buyers</p>
+                  <div className={styles.CardRule}></div>
+                  <p>Full Stack with React, Node, MongoDB</p>
+                  <div className={styles.CardRule}></div>
+                </div>
+              </div>
             </div>
             <div className={styles.CardLinksContainer}>
 
