@@ -26,7 +26,9 @@ function Header(props) {
         document.getElementById("header").style.backgroundColor = "rgba(51, 51, 51, 0.904)";
         document.getElementById("gh-link").style.display = "none";
         document.getElementById("gh-img").style.paddingRight = "20px";
+        document.getElementById("gh-img").classList = "fab fa-github-square fa-lg";
         document.getElementById("lin-link").style.display = "none";
+        document.getElementById("lin-img").classList = "fab fa-linkedin fa-lg";
         document.getElementById("ImgLinkContainer").style.width = "fit-content";
         // document.getElementById("header").style.filter = "blur(4px)";
     } else {
@@ -34,7 +36,9 @@ function Header(props) {
         document.getElementById("header").style.backgroundColor = "rgb(51, 51, 51)";
         document.getElementById("gh-link").style.display = "initial";
         document.getElementById("gh-img").style.paddingRight = "0px";
+        document.getElementById("gh-img").classList = "fab fa-github-square fa-2x";
         document.getElementById("lin-link").style.display = "initial";
+        document.getElementById("lin-img").classList = "fab fa-linkedin fa-2x";
         // document.getElementById("header").style.filter = "blur(0)";
     }
     }
