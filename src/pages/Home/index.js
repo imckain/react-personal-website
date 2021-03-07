@@ -1,5 +1,9 @@
 import { Component } from 'react'
 
+import ProjectCard1 from '../../components/ProjectCard1';
+import ProjectCard2 from '../../components/ProjectCard2';
+import ProjectCard3 from '../../components/ProjectCard3';
+
 // Skills List
 import styles from './Home.module.css';
 import photo from '../../assets/me-square.jpeg';
@@ -150,74 +154,9 @@ class HomePage extends Component {
           </div>
         </div>
         <div className={styles.ProjectsContainer}>
-          <div className={styles.ProjectCard1}>
-            <div className={styles.CardBackground1}>
-            </div>
-            <div className={styles.CardBannerBackground}>
-              <div className={styles.CardContentContainer}>
-                <div className={styles.ProjectTitle1}>
-                  <span>React Real Estate</span>
-                </div>
-                <div className={styles.CardContent}>
-                  <p>An example React App for a real estate client</p>
-                  <div className={styles.CardRule}></div>
-                  <p>Full CRUD for admin</p>
-                  <div className={styles.CardRule}></div>
-                  <p>OAuth secure login for potential buyers</p>
-                  <div className={styles.CardRule}></div>
-                  <p>Full Stack with React, Node, MongoDB</p>
-                  <div className={styles.CardRule}></div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.CardLinksContainer}>
-
-            </div>
-          </div>
-          <div className={styles.ProjectCard}>
-            <div className={styles.CardBackground1}>
-            </div>
-            <div className={styles.CardBannerBackground}>
-              <div className={styles.CardContentContainer}>
-                <span className={styles.ProjectTitle}>React Real Estate</span>
-                <div className={styles.CardContent}>
-                  <p>An example React App for a real estate client</p>
-                  <div className={styles.CardRule}></div>
-                  <p>Full CRUD for admin</p>
-                  <div className={styles.CardRule}></div>
-                  <p>OAuth secure login for potential buyers</p>
-                  <div className={styles.CardRule}></div>
-                  <p>Full Stack with React, Node, MongoDB</p>
-                  <div className={styles.CardRule}></div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.CardLinksContainer}>
-
-            </div>
-          </div>
-          <div className={styles.ProjectCard}>
-            <div className={styles.CardBackground1}>
-            </div>
-            <div className={styles.CardBannerBackground}>
-              <div className={styles.CardContentContainer}>
-                <span className={styles.ProjectTitle}>React Real Estate</span>
-                <div className={styles.CardContent}>
-                  <p>An example React App for a real estate client</p>
-                  <div className={styles.CardRule}></div>
-                  <p>Full CRUD for admin</p>
-                  <div className={styles.CardRule}></div>
-                  <p>OAuth secure login for potential buyers</p>
-                  <div className={styles.CardRule}></div>
-                  <p>Full Stack with React, Node, MongoDB</p>
-                  <div className={styles.CardRule}></div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.CardLinksContainer}>
-
-            </div>
-          </div>
+          <ProjectCard1 />
+          <ProjectCard2 />
+          <ProjectCard3 />
         </div>
         <div className="ContactForm">
           <form action="">
