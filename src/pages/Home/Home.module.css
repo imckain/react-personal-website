@@ -212,6 +212,18 @@
     justify-content: space-evenly;
 }
 
+.ProjectCard1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 26vw;
+    height: fit-content;
+    border: 3px solid var(--accent-color);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
 .ProjectCard {
     display: flex;
     flex-direction: column;
@@ -220,8 +232,22 @@
     width: 26vw;
     height: fit-content;
     border: 3px solid var(--accent-color);
-    border-radius: 10px;
+    border-radius: 3px;
     overflow: hidden;
+}
+
+@media only screen and (min-width: 1300px) {
+    .ProjectCard1 {
+        width: 348px;
+    }
+
+    .ProjectCard {
+        width: 348px;
+    }
+
+    .ProjectCard {
+        width: 348px;
+    }
 }
 
 .CardBackground1 {
@@ -248,16 +274,34 @@
     transform: skewY(11deg);
     top: -50px;
     z-index: 1;
-    height: 200px;
+    height: 230px;
     padding-top: 50px;
     padding-bottom: 50px;
     box-shadow: var(--main-top-shadow);
     box-shadow: var(--main-shadow);
 }
 
-.CardContent {
+.CardContentContainer {
     position: relative;
     transform: skewY(-11deg);
+}
+
+.ProjectTitle1 {
+    padding-right: 9px;
+    padding-left: 9px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    color: white;
+    font-weight: 700;
+    z-index: 1;
+    position: absolute;
+    top: -84px;
+    right: 0px;
+    background-color: #aa1a18;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: var(--main-top-shadow);
+    box-shadow: var(--main-shadow);
 }
 
 .ProjectTitle {
@@ -271,7 +315,30 @@
     position: absolute;
     top: -84px;
     right: 0px;
-    background-color: var(--grey-background-color);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background-color: #AA1A18;
     box-shadow: var(--main-top-shadow);
     box-shadow: var(--main-shadow);
+}
+
+.CardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: -10px;
+    font-size: 14px;
+    color: var(--grey-background-color);
+}
+
+.CardContent > p {
+    align-self: flex-start;
+    padding-left: 20px;
+}
+
+.CardRule {
+    background-color: var(--accent-color);
+    height: 1px;
+    width: 80%;
 }
