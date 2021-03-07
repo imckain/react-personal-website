@@ -1,5 +1,6 @@
 import { Component } from 'react'
 
+// Skills List
 import styles from './Home.module.css';
 import photo from '../../assets/me-square.jpeg';
 import reactImg from '../../assets/techImages/react.png';
@@ -13,6 +14,9 @@ import djangoImg from '../../assets/techImages/django.png'
 import restImg from '../../assets/techImages/api.png'
 import mvcImg from '../../assets/techImages/database.png'
 import postgresqlImg from '../../assets/techImages/postgresql.png'
+// Project Cards
+import realEstateImg from '../../assets/realestate.jpg'
+
 
 let dataWords = '["React.JS", "JavaScript/Node.JS", "Python/Django"]'
 
@@ -99,8 +103,7 @@ class HomePage extends Component {
                 <h2>Ian McKain</h2>
                 <div className={styles.Message}>
                   <p>A<span className='txt-type' ></span>Developer based out of Columbus, OH</p>
-                  <p>specializing in responsive, modern websites & effecient data managment</p> 
-                  <p>Checkout my work and drop me a line</p>
+                  <p>specializing in responsive, modern websites & effecient data managment.</p> 
                 </div>
               </div>
             </div>
@@ -145,6 +148,43 @@ class HomePage extends Component {
                   <li><img src={mvcImg} alt="" className={styles.SkillImg}/> MVC</li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.ProjectsContainer}>
+          <div className={styles.ProjectCard}>
+            <div className={styles.CardBackground1}>
+            </div>
+            <div className={styles.CardBannerBackground}>
+              <div className={styles.CardContent}>
+                <span className={styles.ProjectTitle}>React Real Estate</span>
+                <p></p>
+              </div>
+            </div>
+            <div className={styles.CardLinksContainer}>
+
+            </div>
+          </div>
+          <div className={styles.ProjectCard}>
+            <div className={styles.CardBackground2}>
+              <span className={styles.ProjectTitle}>Project</span>
+            </div>
+            <div className={styles.CardContent}>
+              <p></p>
+            </div>
+            <div className={styles.CardLinksContainer}>
+
+            </div>
+          </div>
+          <div className={styles.ProjectCard}>
+            <div className={styles.CardBackground3}>
+              <span className={styles.ProjectTitle}>Project</span>
+            </div>
+            <div className={styles.CardContent}>
+              <p></p>
+            </div>
+            <div className={styles.CardLinksContainer}>
+
             </div>
           </div>
         </div>
