@@ -11,8 +11,7 @@
   .App {
     border-left: 6px solid var(--grey-background-color);
     border-right: 6px solid var(--grey-background-color);
-    box-shadow: var(--main-left-shadow);
-    box-shadow: var(--main-right-shadow);
+    box-shadow: var(--main-left-shadow), var(--main-right-shadow);
   }
 }
 
