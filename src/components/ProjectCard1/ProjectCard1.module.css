@@ -8,6 +8,7 @@
     border: 3px solid #aa1a18;
     border-radius: 3px;
     overflow: hidden;
+    box-shadow: var(--main-shadow);
 }
 
 @media only screen and (min-width: 1300px) {
@@ -42,8 +43,7 @@
     height: 230px;
     padding-top: 50px;
     padding-bottom: 50px;
-    box-shadow: var(--main-top-shadow);
-    box-shadow: var(--main-shadow);
+    box-shadow: var(--main-top-shadow), var(--main-shadow);
 }
 
 .CardContentContainer {
