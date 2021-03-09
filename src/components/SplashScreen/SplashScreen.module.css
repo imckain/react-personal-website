@@ -1,0 +1,60 @@
+.SplashScreenContainer {
+    height: 828px;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    background-color: rgb(121, 120, 120);
+    z-index: 1;
+}
+
+.SplashBackgroundContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: skewY(-11deg);
+}
+
+.SplashBackground::before {
+    position: absolute;
+}
+
+
+.SplashBackground {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/homebg4.jpg');
+    background-size: cover;
+    transform: skewY(11deg);
+    border-right: 2px solid var(--grey-background-color);
+}
+
+.HomeSplashScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-top: 50px;
+    width:  100%;
+    height: 70vh;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0,32,63,0.4), #38536abb);
+}
+
+.HomeSplashScreen > h1 {
+    margin: 0;
+}
+
+.Message {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+}
+
+@media only screen and (min-width: 1300px) {
+    .HomeSplashScreen {
+        font-size: 30px;
+    }
+    
+}
