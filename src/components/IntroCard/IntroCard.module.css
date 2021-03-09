@@ -1,0 +1,25 @@
+.IntroWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: fit-content;
+    min-height: 588px;
+    background-color: white;
+    border: 3px solid var(--accent-color);
+    border-radius: 3px;
+    margin-left: 41px;
+    box-shadow: var(--main-top-shadow), var(--main-shadow);
+}
+
+.IntroWrapper > p {
+    width: 80%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: var(--accent-color);
+    overflow-wrap: break-word;
+    text-align: left;
+}
