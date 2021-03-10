@@ -17,11 +17,16 @@ function HomePage(props) {
         <SplashScreen />
         <HomeContent />
         <div className={styles.ProjectsContainer}>
-          <ProjectCard1 />
-          <ProjectCard2 />
-          <ProjectCard3 />
+          <span>Here are just a few things I have been working on</span>
+          <div className={styles.CardWrapper}>
+            <ProjectCard1 />
+            <ProjectCard2 />
+            <ProjectCard3 />
+          </div>
         </div>
         <div className={styles.ContactFormContainer}>
+          <span>Shoot me a message!</span>
+          <div className={styles.Rule}></div>
           <ContactForm />
         </div>
       </div>
