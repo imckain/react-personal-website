@@ -15,6 +15,12 @@
     box-shadow: var(--main-shadow), var(--main-top-shadow);
 }
 
+@media only screen and (min-width: 869px) {
+    .SkillsListWrapper {
+        width: 25vw;
+    }
+}
+
 .SkillsListWrapper > ul {
     display: flex;
     flex-direction: column;
@@ -36,4 +42,39 @@
 .SkillsListWrapper > ul > li > img {
     padding-right: 16px;
     height: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .SkillsListWrapper {
+        display: flex;
+        min-height: fit-content;
+        height: 250px;
+        overflow-wrap: break-word;
+        width: 80%;
+        margin-top: 20px;
+        margin: 0px;
+        margin-top: 20px;
+        align-self: center;
+    }
+
+    .SkillsListWrapper > ul {
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap column;
+        justify-content: center;
+        align-items: flex-start;
+        max-height: 230px;
+        width: 100%;
+        font-size: 12px;
+        padding-left: 0px;
+    }
+
+    .SkillsListWrapper > ul > li {
+        width: fit-content;
+        text-align: left;
+    }
+
+    .SkillsListWrapper > ul > li > img {
+        visibility: hidden;
+    }
 }

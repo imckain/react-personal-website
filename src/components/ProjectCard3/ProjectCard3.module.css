@@ -8,11 +8,18 @@
     border: 3px solid #aa1a18;
     border-radius: 3px;
     overflow: hidden;
+    box-shadow: var(--main-shadow);
 }
 
 @media only screen and (min-width: 1300px) {
     .ProjectCard {
         width: 348px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .ProjectCard {
+        width: 332px;
     }
 }
 
@@ -42,7 +49,6 @@
     height: 230px;
     padding-top: 50px;
     padding-bottom: 50px;
-    box-shadow: var(--main-top-shadow);
     box-shadow: var(--main-shadow);
 }
 
@@ -65,25 +71,6 @@
     background-color: #aa1a18;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    box-shadow: var(--main-top-shadow);
-    box-shadow: var(--main-shadow);
-}
-
-.ProjectTitle {
-    padding-right: 9px;
-    padding-left: 9px;
-    padding-bottom: 4px;
-    padding-top: 4px;
-    color: white;
-    font-weight: 700;
-    z-index: 1;
-    position: absolute;
-    top: -84px;
-    right: 0px;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    background-color: #AA1A18;
-    box-shadow: var(--main-top-shadow);
     box-shadow: var(--main-shadow);
 }
 

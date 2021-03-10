@@ -55,3 +55,29 @@
     text-decoration: none;
     color: white;
 }
+
+@media only screen and (max-width: 600px) {
+    .NavBar > ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        height: 100%;
+    }
+    
+    .NavBar {
+        margin-right: 5px;
+    }
+
+    .ImgLinkContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .HeaderLinkContainer > span {
+        padding: 15px;
+    }
+}

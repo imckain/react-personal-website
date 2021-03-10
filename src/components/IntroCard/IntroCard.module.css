@@ -23,3 +23,17 @@
     overflow-wrap: break-word;
     text-align: left;
 }
+
+@media only screen and (max-width: 600px) {
+    .IntroWrapper {
+        min-height: fit-content;
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .IntroWrapper > p {
+        margin: 0px;
+        padding: 40px;
+        font-size: 15px;
+    }
+}

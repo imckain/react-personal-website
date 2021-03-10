@@ -15,6 +15,23 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .App {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  Header {
+    height: 70px;
+    max-width: 100vw;
+  }
+
+  main {
+    width: 100%;
+  }
+}
+
 main {
   flex-grow: 1;
   position: relative;
@@ -31,6 +48,7 @@ Header {
 }
 
 Footer {
+  box-sizing: border-box;
   bottom: 0;
   width: 100%;
   max-width: 1300px;
